@@ -12,3 +12,10 @@ Project was created to obtain my 'Power BI' certification.
 
 This project is about putting Power BI report creation knowledge into practice: connecting data sources, data cleansing and transformation, model creation, creation of benchmarks, and creating data visualizations.
 ![image](https://github.com/danajez/public_projects/assets/116874735/703ed2a8-7e31-4872-bdb3-f6a832173a4a)
+
+---
+# Python Project: Playing with Kickstarter - funding platform for creative projects
+
+Project was created to obtain my 'Data Analysis in Python' certification.
+
+This project is about the process and analysis of data containing information about the projects you want to build for people - everything from films, games, and music to art, design, and technology. The tasks and questions are given by lecturer. All tasks take no more than 3-4 lines of code.
