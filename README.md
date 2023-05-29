@@ -23,7 +23,7 @@ This project is about the process and analysis of data containing information ab
 ### Check the code itself [here](https://github.com/danajez/public_projects/blob/main/Python_WDA_kickstarter-projects/WDA%20Certification%20-%20github.ipynb).
 
 ---
-# SQL Queries - Women SQL Academy
+# [SQL Queries - Women SQL Academy](https://github.com/danajez/public_projects/blob/main/SQL_Queries_WSQLA/README.md)
 
 Project was created to obtain my SQL certification as a part of 'Women SQL Academy' course.
 
