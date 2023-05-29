@@ -1,0 +1,71 @@
+--1. TASK: How do you create EMPLOYEE2 table which is identical with EMPLOYEE table?
+CREATE TABLE w19dj16.employee2 AS
+	(SELECT * FROM wsqla.employee);
+
+
+-- 2. TASK: Fill out EMPLOYEE2 table with the data from table EMPLOYEE but don`t include Managers.
+INSERT INTO w19dj16.employee2  
+SELECT *
+FROM wsqla.employee
+WHERE job != 'MANAGER';
+
+
+-- 3. TASK: Find out which employee in the table EMPLOYEE has the highest salary.(in SELECT use last name and salary).
+SELECT lastname, salary
+FROM wsqla.employee
+WHERE salary = (SELECT max(salary)
+				FROM wsqla.employee);
+
+HAAS; 152.750
+
+
+-- 4. TASK: Delete all employees, which have 'e' as a second letter in their lastname from table EMPLOYEE2
+DELETE
+FROM w19dj16.employee2
+WHERE lastname LIKE '_E%';
+
+--5. TASK: Find out which department has the highest average salary in table Employee.
+SELECT workdept, avg(salary) AS avg_salary
+FROM wsqla.employee
+GROUP BY workdept
+HAVING avg(salary) = (SELECT max(avg_salary)
+						FROM (SELECT workdept, avg(salary)AS avg_salary  
+								FROM wsqla.employee
+								GROUP BY workdept) AS avg_sal_dept);
+
+B01; 94.250
+
+--6. TASK: Find out the count of activities for every department. Order by count of activities descending. Use tables EMP_ACT, EMPLOYEE. Number of activity is in column ACTNO.
+SELECT workdept, COUNT(actno)
+FROM wsqla.employee e 
+RIGHT JOIN wsqla.emp_act ea 
+ON e.empno = ea.empno
+GROUP BY workdept
+ORDER BY count(actno) DESC
+
+--7. TASK: Show names and salaries for non-managers from department D21. In first line will be the original salary, in second row will be salary after 10% increase. There will be only 1 Salary column.
+
+SELECT lastname, firstnme, 'pred_zvysenim' AS kedy, salary
+FROM wsqla.employee
+WHERE 
+	workdept = 'D21'
+	AND job != 'MANAGER'
+UNION ALL
+SELECT lastname, firstnme, 'po_zvyseni' AS kedy, salary*1.01
+FROM wsqla.employee
+WHERE 
+	workdept = 'D21'
+	AND job != 'MANAGER'
+ORDER BY lastname;
+
+
+--8. TASK: Create a list with columns "wordkept, empno, salary" of every employee in department A00. On the last line sum all salaries you see in the view.
+
+SELECT workdept, empno, salary
+FROM wsqla.employee
+WHERE workdept = 'A00'
+UNION ALL 
+SELECT workdept, 'Total_for_dep' , SUM(salary)
+FROM wsqla.employee
+WHERE workdept = 'A00'
+GROUP BY workdept;
