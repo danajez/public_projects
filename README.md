@@ -21,3 +21,10 @@ Project was created to obtain my 'Data Analysis in Python' certification.
 This project is about the process and analysis of data containing information about the projects you want to build for people - everything from films, games, and music to art, design, and technology. The tasks and questions are given by lecturer. All tasks take no more than 3-4 lines of code.
 
 ### Check the code itself [here](https://github.com/danajez/public_projects/blob/main/Python_WDA_kickstarter-projects/WDA%20Certification%20-%20github.ipynb).
+
+---
+# SQL Queries - Women SQL Academy
+
+Project was created to obtain my SQL certification as a part of 'Women SQL Academy'.
+
+This project shows the requests (tasks) we want to resolve in the company using various queries in PostgreSQL.
