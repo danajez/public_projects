@@ -29,9 +29,9 @@ SELECT workdept, avg(salary) AS avg_salary
 FROM wsqla.employee
 GROUP BY workdept
 HAVING avg(salary) = (SELECT max(avg_salary)
-						FROM (SELECT workdept, avg(salary)AS avg_salary  
-								FROM wsqla.employee
-								GROUP BY workdept) AS avg_sal_dept);
+			FROM (SELECT workdept, avg(salary)AS avg_salary  
+				FROM wsqla.employee
+				GROUP BY workdept) AS avg_sal_dept);
 
 B01; 94.250
 
