@@ -25,6 +25,6 @@ This project is about the process and analysis of data containing information ab
 ---
 # SQL Queries - Women SQL Academy
 
-Project was created to obtain my SQL certification as a part of 'Women SQL Academy'.
+Project was created to obtain my SQL certification as a part of 'Women SQL Academy' course.
 
-This project shows the requests (tasks) we want to resolve in the company using various queries in PostgreSQL.
+The course was focused on practical work with databases: how to work, connect and analyze data in databases using the SQL language, obtaining, inserting and updating data, but also analytical queries or practical commands to facilitate work.
