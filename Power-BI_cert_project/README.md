@@ -59,7 +59,7 @@ There are 5 parts in the Revenue view.
 3. We can see which salesmen was the most active. By hoovering over the name, user is able to see exact revenue numbers for the person.
    ![image](https://github.com/danajez/public_projects/assets/116874735/cf1dee88-f700-4dbc-8fc4-1a536ad7a70d)
 
-4.In this view we can see revenue vs budget in abslute numbers and in % per quarter for filtered year.
+4.In this view we can see revenue vs budget in absolute numbers and in percentage (%) per quarter for filtered year.
    ![image](https://github.com/danajez/public_projects/assets/116874735/89d8c4a0-3196-4956-88b0-f834fb14a79a)
    
 5. In this view user can see revenue per quarter compared to last year`s revenue per quarter and % expression of the comparisson as well.
