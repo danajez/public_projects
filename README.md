@@ -20,6 +20,14 @@ Visualization showing the distribution of the clients based on their emplyment s
 
 ![image](https://github.com/danajez/public_projects/assets/116874735/39eb56bb-6806-4b1e-a087-3f8b9c62e8d0)
 
+Visualization showing Credit Card approval based on marital status.
+
+![image](https://github.com/danajez/public_projects/assets/116874735/696c44d1-41ba-4e54-9a5e-8a85100e4891)
+
+Visualization showing Credit Card approval based on income (in violin plot we can see that credit card approval is impacted by income). 
+
+![image](https://github.com/danajez/public_projects/assets/116874735/4b868298-d268-4126-ac6f-7dc4fa53d683)
+
 
 ---
 # [Power BI Project: Revenue and products](https://github.com/danajez/public_projects/blob/main/Power-BI_cert_project/README.md)
